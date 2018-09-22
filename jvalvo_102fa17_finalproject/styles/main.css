@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("../images/mirrored_squares/mirrored_squares.png"); /* from toptal.com, mirrored squares */
+    background-repeat: repeat;
+}
+
+body {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d7c2e8;  /* #ac75d6 is good for other things */
+    border: 3px solid #401560;
+    font-size: 110%;
+    background: rgba(215,194,232,1);
+    background: -moz-linear-gradient(top, rgba(215,194,232,1) 0%, rgba(188,151,219,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(215,194,232,1)), color-stop(100%, rgba(188,151,219,1)));
+    background: -webkit-linear-gradient(top, rgba(215,194,232,1) 0%, rgba(188,151,219,1) 100%);
+    background: -o-linear-gradient(top, rgba(215,194,232,1) 0%, rgba(188,151,219,1) 100%);
+    background: -ms-linear-gradient(top, rgba(215,194,232,1) 0%, rgba(188,151,219,1) 100%);
+    background: linear-gradient(to bottom, rgba(215,194,232,1) 0%, rgba(188,151,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7c2e8', endColorstr='#bc97db', GradientType=0 );
+}
+
+/* Styles for the header */
+header {
+    font-family: 'Bitter', serif;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    max-height: 225px;
+    margin: 0 auto;
+    position: relative;
+    /*height: auto;*/
+    /*overflow: auto;*/
+    background-image: url("../images/keyboard-translucent-resized.jpg");
+    background-color: #d7c2e8;
+    width: 100%;
+}
+
+header img {
+    max-width: 150px;
+    /*max-height: 167.52px;*/
+    float: left;
+    /*opacity: 0.5;*/
+    /*width: 14%;*/
+    /*height: 100%;*/
+}
+
+header h1 {
+    padding: 1em 0 0 5em; /* left was 5em, can be 15% */
+    margin: 0 0 0.66em; /* bottom was 0.66em, can be 1.93% */
+    font-size: 200%;
+}
+
+header h2 {
+    padding: 0 0 1.33em 6.63em; /* left was 6.6em, can be 15% */
+    font-size: 150%;
+}
+
+header a.plain_text {
+    text-decoration: none;
+    color: black;
+}
+header a.plain_text:hover, header a.plain_text:focus, header a.plain_text:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* the styles for the navigation menu */
+#nav_menu {
+    clear: none;
+    position: absolute;
+    /*bottom: -57px;*/
+    bottom: -34.5%;
+    /*left: 150px;*/
+    left: 12.5%;
+    max-width: 1050px;
+    margin: 0;
+    padding: 0;
+    width: 87.5%
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#nav_menu ul li {
+    float: left;
+    /*width: 19.8%;*/
+    width: 20%;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+    width: 20%;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav_menu ul li a {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    display: block;
+    /*width: 11.835em;*/
+    padding: 1em 0;
+    /*padding: 1em 17.5%;*/
+    text-decoration: none;
+    background-color: #5f5a63;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+#nav_menu a.current {
+    color: darkgrey;
+}
+#nav_menu ul li ul li {
+    width: 100%;
+    border: none;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+}
+/*#nav_menu a.lastitem {*/
+    /*border-right: none;*/
+/*}*/
+
+
+/* Styles for the main */
+main {
+    clear: both;
+    padding: 3em 1em;
+    width: 59%;
+    float: left;
+}
+
+main p, aside p {
+    padding: 4px 0 1em;
+}
+
+h3 {
+    font-family: 'Bitter', serif;
+    font-size: 150%;
+}
+
+main h4, aside h4 {
+    font-family: 'Bitter', serif;
+    font-size: 120%;
+    padding-top: 1em;
+}
+
+
+/* Styles for the aside */
+aside {
+    width: 33%;
+    float: right;
+    padding: 3em 1.3em 3em 0;
+    /*position: relative;*/
+    /*margin: 0 0 0 65%;*/
+}
+
+main img, aside img {
+    border: 2px solid #401560;
+}
+
+img.top_margin {
+    margin-top: 3.5em;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li a {
+    display: block;
+    width: 80%;
+    border: 2px solid #401560;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: center;
+    padding: 0.75em 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+aside ul li a:hover, aside ul li a:focus {
+    background-color: white;
+}
+
+
+/* Styles for the footer */
+footer {
+    clear: both;
+    border-top: 3px solid #401560;
+    padding: 1em 0;
+    background: rgba(188,151,219,1);
+    background: -moz-linear-gradient(top, rgba(188,151,219,1) 0%, rgba(161,123,199,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,151,219,1)), color-stop(100%, rgba(161,123,199,1)));
+    background: -webkit-linear-gradient(top, rgba(188,151,219,1) 0%, rgba(161,123,199,1) 100%);
+    background: -o-linear-gradient(top, rgba(188,151,219,1) 0%, rgba(161,123,199,1) 100%);
+    background: -ms-linear-gradient(top, rgba(188,151,219,1) 0%, rgba(161,123,199,1) 100%);
+    background: linear-gradient(to bottom, rgba(188,151,219,1) 0%, rgba(161,123,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc97db', endColorstr='#a17bc7', GradientType=0 );
+}
+footer p {
+    text-align: center;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* Tablet portrait */
+@media only screen and (max-width: 797px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+        z-index: 10;
+    }
+    header img {
+        height: 145.53px;
+    }
+    header h1 {
+        font-size: 175%;
+        padding-left: 3.8em;
+    }
+    header h2 {
+        font-size: 130%;
+        padding-left: 5em;
+    }
+    main {
+        width: 90%;
+        float: none;
+        padding: 3em 5% 1em;
+        z-index: 0;
+    }
+    .slider {
+        z-index: 0;
+    }
+    aside {
+        width: 90%;
+        float: none;
+        padding: 0.5em 5% 1em;
+        margin: 0 auto;
+    }
+    main img, aside img {
+        margin: 0 auto;
+    }
+    img.top_margin {
+        margin: 0 auto;
+    }
+    main p, aside p {
+        padding: 0 5% 1em;
+    }
+    footer {
+        padding: 0.5em 0;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    header h2 {
+        font-size: 100%;
+        padding-left: 6em;
+    }
+    header img {
+        height: 132.52px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header img {
+        height: 153.52px;
+    }
+    header h2 {
+        padding-left: 6.5em;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Valvo Contact</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- SlickNav styles -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans+Condensed" rel="stylesheet">
+
+
+    <!-- Load jQuery library from CDN (Content Delivery Network) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script> -->
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- 2.1.3 -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav( { prependTo: "#mobile_menu" } );
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a class="plain_text" href="index.html"><img src="images/jarod-headshot-resized.jpg">
+        <h1>Jarod Valvo</h1>
+        <h2>Computational Science Student</h2></a>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a>
+                    <ul>
+                        <li><a href="work_experience.html">Work Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+                    </ul>
+                </li>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+
+    <main>
+        <form name="contactform" method="post" action="send_form_email.php">
+            <table width="450px">
+                <tr>
+                    <td valign="top">
+                        <label for="first_name">First Name *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="first_name" maxlength="50" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                    <label for="last_name">Last Name *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="last_name" maxlength="50" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="email">Email Address *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="email" maxlength="80" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="telephone">Telephone Number</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="telephone" maxlength="30" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="comments">Comments *</label>
+                    </td>
+                    <td valign="top">
+                        <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <input type="submit" value="Submit">   
+<!--                        <a href="http://www.freecontactform.com/email_form.php">Email Form</a>-->
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>
+            <script>
+                var today = new Date();
+                document.write("&copy; Jarod Valvo " + today.getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>
+</html>

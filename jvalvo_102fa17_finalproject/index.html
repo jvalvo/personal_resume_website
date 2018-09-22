@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Valvo Homepage</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- bxSlider styles -->
+    <link href="styles/jquery.bxslider.css" rel="stylesheet">
+    <!-- SlickNav styles -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans+Condensed" rel="stylesheet">
+
+
+    <!-- Load jQuery library from CDN (Content Delivery Network) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script> -->
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- 2.1.3 -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav( { prependTo: "#mobile_menu" } );
+        });
+    </script>
+
+    <!-- The bxSlider plugin -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- Call to the bxSlider function -->
+    <script>
+        $(document).ready(function() {
+            $("#slider").bxSlider({
+                auto: true,
+                autoControls: true,
+                captions: true,
+                minSlides: 1,
+                maxSlides: 1,
+                slideWidth: 704,
+                slideMargin: 10
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <a class="plain_text" href="index.html"><img src="images/jarod-headshot-resized.jpg">
+        <h1>Jarod Valvo</h1>
+        <h2>Computational Science Student</h2></a>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a>
+                    <ul>
+                        <li><a href="work_experience.html">Work Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+                    </ul>
+                </li>
+                <li><a class="lastitem" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+
+    <main>
+
+        <ul id="slider">
+            <li>
+                <a href="education.html">
+                    <img src="images/jarod-at-uscb-bxslider.jpg" alt="" title="Education">
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <img src="images/jarod-on-tv-bxslider.jpg" alt="" title="Resume">
+                </a>
+            </li>
+            <li>
+                <a href="work_experience.html">
+                    <img src="images/jarod-in-filmmaker-q-and-a-bxslider.jpg" alt="" title="Work Experience">
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <img src="images/jarod-filming-crew-bxslider.jpg" alt="" title="Projects">
+                </a>
+            </li>
+            <li>
+                <a href="hobbies_and_interests.html">
+                    <img src="images/jarod-on-the-beach-bxslider.jpg" alt="" title="Hobbies and Interests">
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <img src="images/jarod-and-family-bxslider.jpg" alt="" title="About">
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <aside>
+        <p>I am a computational science student
+            at the University of South Carolina Beaufort.</p>
+        <p>You can find my academic achievements <a href="education.html">here</a>
+            on the education page, see my extensive work experience
+            <a href="work_experience.html">here</a>, find the projects I have worked on
+            <a href="projects.html">here</a>, see my hobbies and interests
+            <a href="hobbies_and_interests.html">here</a>,
+            find out more about me <a href="about.html">here</a>,
+            and contact me through email <a href="contact.html">here.</a></p>
+        <h5><a href="https://www.facebook.com/jarod.valvo" target="_blank">Find me on Facebook!</a></h5>
+    </aside>
+
+    <footer>
+        <p>
+            <script>
+                var today = new Date();
+                document.write("&copy; Jarod Valvo " + today.getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>
+</html>

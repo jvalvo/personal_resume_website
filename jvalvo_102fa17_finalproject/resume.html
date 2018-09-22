@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Valvo Resume</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- SlickNav styles -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans+Condensed" rel="stylesheet">
+
+
+    <!-- Load jQuery library from CDN (Content Delivery Network) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script> -->
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- 2.1.3 -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav( { prependTo: "#mobile_menu" } );
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a class="plain_text" href="index.html"><img src="images/jarod-headshot-resized.jpg">
+        <h1>Jarod Valvo</h1>
+        <h2>Computational Science Student</h2></a>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="current" href="resume.html">Resume</a>
+                    <ul>
+                        <li><a href="work_experience.html">Work Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+                    </ul>
+                </li>
+                <li><a class="lastitem" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+
+    <main>
+        <img src="images/jarod-in-computer-lab.jpg" alt="Jarod in his college's computer lab"
+             title="Jarod in his college's computer lab" width="46.3%">
+        <img src="images/jarod-glasses-and-tie.jpg" alt="A professional headshot of Jarod"
+             title="Jarod in business clothing" width=49%">
+    </main>
+
+    <aside>
+        <ul>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+        </ul>
+
+        <p>Want Jarod's acting/filmmaking resume?  Find his IMDB page
+            <a href="http://www.imdb.com/name/nm5381488/" target="_blank">here</a>!</p>
+    </aside>
+
+
+    <footer>
+        <p>
+            <script>
+                var today = new Date();
+                document.write("&copy; Jarod Valvo " + today.getFullYear());
+            </script>
+        </p>
+    </footer>
+
+</body>
+</html>

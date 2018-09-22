@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Valvo About</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- SlickNav styles -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans+Condensed" rel="stylesheet">
+
+
+    <!-- Load jQuery library from CDN (Content Delivery Network) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script> -->
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- 2.1.3 -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav( { prependTo: "#mobile_menu" } );
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a class="plain_text" href="index.html"><img src="images/jarod-headshot-resized.jpg">
+        <h1>Jarod Valvo</h1>
+        <h2>Computational Science Student</h2></a>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a class="current" href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a>
+                    <ul>
+                        <li><a href="work_experience.html">Work Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+                    </ul>
+                </li>
+                <li><a class="lastitem" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+
+    <main>
+        <p>I am a student at the University of
+            South Carolina Beaufort.  I live in Hilton Head Island, South Carolina,
+            with my parents, younger sister, and two dogs named Jelly and Snurfle.</p>
+        <p>I have always had a love for computers.  Figuring out how to play
+        computer games while still in diapers, beating online grade school course
+        games within a single day, and acing computer oriented college courses, I
+        strive to take my love for computers and to turn it into a mastery.</p>
+        <p>I am currently studying for a major of computational science at USCB,
+            and I have a minor in communications to capitalize on my excellent
+            social skills.</p>
+        <p>I have done a multitude of things such as working as a chiropractic
+            assistant, writing a published children's book, making award-winning and
+            award-nominated short films, acting in commercials and films such as a
+            movie currently on Netflix, as well as academic achievements that you can find
+            <a href="education.html">here</a> at the education page.</p>
+        <p>Want to know more about my work experience?
+            Visit the work experience page located right <a href="work_experience.html">here</a>.</p>
+        <p>Curious about my hobbies?  Find a page on those right <a href="hobbies_and_interests.html">here</a>.</p>
+    </main>
+
+
+    <aside>
+        <img src="images/jarod-and-family.jpg" alt="Me with my family"
+             title="Me with my family" width="100%">
+    </aside>
+
+
+    <footer>
+        <p>
+            <script>
+                var today = new Date();
+                document.write("&copy; Jarod Valvo " + today.getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>

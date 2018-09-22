@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Valvo Education</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- SlickNav styles -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans+Condensed" rel="stylesheet">
+
+
+    <!-- Load jQuery library from CDN (Content Delivery Network) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script> -->
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- 2.1.3 -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav( { prependTo: "#mobile_menu" } );
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a class="plain_text" href="index.html"><img src="images/jarod-headshot-resized.jpg">
+        <h1>Jarod Valvo</h1>
+        <h2>Computational Science Student</h2></a>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a>
+                    <ul>
+                        <li><a href="work_experience.html">Work Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="hobbies_and_interests.html">Hobbies and Interests</a></li>
+                    </ul>
+                </li>
+                <li><a class="lastitem" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+
+    <main>
+        <h3>Education</h3>
+            <p>I skipped pre-kindergarten as well as first grade, and I have been
+            testing at college level since eight years old on end-of-school-year
+            Iowa tests.  In those tests, I was also in the upper ninetieth
+            percentile of those at my grade level.</p>
+
+            <p>I was homeschooled since third grade to allow myself to learn
+                at the faster speed I needed.  I graduated high school at
+                sixteen years old.</p>
+            <p>I tested into the Technical College of the Lowcountry for dual
+                enrollment at fourteen years old.  At sixteen, I was accepted
+                into the University of South Carolina Beaufort, where I am currently
+                in computational science studies.  Of all college
+                level courses I have taken currently, I have gotten all A's and one B.</p>
+            <p>At USCB, I have taken classes such as MATLAB, Java, calculus I through III,
+                general applications programming, technical writing, introduction to computer
+                security, introduction to computational science, public communications,
+                western civilization through the 17th century, studio arts for non majors, and
+                human biology.  From taking dual enrollment at TCL, I have taken introduction to
+                computer concepts, accounting 1 and 2, micro and macroeconomics, English 1 and 2,
+            intermediate algebra, introduction to geography, and general psychology.</p>
+            <p>I have now learned a general understanding of computational science
+                from my introduction class as well as programming in MATLAB, Java, HTML, CSS,
+                and some JavaScript (this site was created by me using HTML, CSS, and JavaScript!),
+                and I am excited to learn more and start on more computer-oriented
+                projects of his own.</p>
+    </main>
+
+
+    <aside>
+        <img src="images/jarod-at-uscb.jpg" alt="Jarod at USCB" title="Jarod at USCB" width="90%">
+        <!--<img src="images/young-jarod-with-iowa-test-scores.jpg" width="100%"-->
+             <!--alt="Thirteen year old Jarod holding his Iowa Test scores"-->
+            <!--title="Thirteen year old Jarod holding his Iowa Test scores">-->
+    </aside>
+
+
+    <footer>
+        <p>
+            <script>
+                var today = new Date();
+                document.write("&copy; Jarod Valvo " + today.getFullYear());
+            </script>
+        </p>
+    </footer>
+
+</body>
+</html>
